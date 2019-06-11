@@ -17,7 +17,7 @@ import javax.persistence.Table;
 @Data
 @NoArgsConstructor
 @EqualsAndHashCode(callSuper = false)
-public class AddressEntity extends BaseEntity<AddressEntity> {
+public class AddressEntity extends BaseEntity {
 
     @Column(name = "HOUSE_NO")
     private int houseNo;

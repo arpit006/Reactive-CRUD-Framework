@@ -21,7 +21,7 @@ import static org.springframework.util.ReflectionUtils.invokeMethod;
 /**
  * @author <a href = "mailto: iarpitsrivastava06@gmail.com"> Arpit Srivastava</a>
  */
-public abstract class BuilderConverter<T extends BaseEntity<T>, V extends BaseVo<V>, B> extends AbstractConverter<T, V> {
+public abstract class BuilderConverter<T extends BaseEntity, V extends BaseVo<V>, B> extends AbstractConverter<T, V> {
 
     private Class<T> sourceClass;
 

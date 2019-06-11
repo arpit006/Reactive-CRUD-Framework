@@ -1,1 +1,37 @@
-POST http://localhost:8080/
+POST http://localhost:8080/person
+Content-Type: application/json
+
+{
+  "firstName": "Arpit",
+  "lastName": "Srivastava",
+  "age": 22,
+  "email": "arpit@gmail.com",
+  "salary": 80000.00,
+  "mobileNo": [
+    123,
+    456,
+    789
+  ],
+  "address": {
+    "uuid": "402881896b4714fb016b471698d00001",
+    "houseNo": 1,
+    "streetNo": 2,
+    "city": "Lucknow",
+    "country": "India"
+  }
+}
+
+###
+
+POST http://localhost:8080/address
+Content-Type: application/json
+
+{
+  "houseNo": 1,
+  "streetNo": 2,
+  "city": "Lucknow",
+  "country": "India"
+}
+
+###
+

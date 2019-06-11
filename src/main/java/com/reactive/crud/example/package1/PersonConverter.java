@@ -28,7 +28,7 @@ public class PersonConverter extends BuilderConverter<PersonEntity, PersonVo, Pe
 
     @Override
     public PersonEntity mapVoToEntity(PersonEntity entity, PersonVo vo) {
-        PersonEntity personEntity = mapVoToEntity(entity, vo);
+        PersonEntity personEntity = super.mapVoToEntity(entity, vo);
         personEntity.setAddress(addressConverter.convertVoToEntity(vo.getAddress()));
         personEntity.setMobileNo(vo.getMobileNo());
         return personEntity;

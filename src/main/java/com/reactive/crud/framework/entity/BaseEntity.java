@@ -22,7 +22,7 @@ import java.time.LocalDateTime;
 @MappedSuperclass
 @Data
 @EntityListeners(AuditingEntityListener.class)
-public class BaseEntity<T> {
+public class BaseEntity {
 
     @Id
     @GenericGenerator(name = "system_uuid", strategy = "uuid")

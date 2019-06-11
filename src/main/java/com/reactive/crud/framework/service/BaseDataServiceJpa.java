@@ -16,7 +16,7 @@ import java.util.function.Supplier;
 /**
  * @author <a href = "mailto: iarpitsrivastava06@gmail.com"> Arpit Srivastava</a>
  */
-public class BaseDataServiceJpa<T extends BaseEntity<T>, V extends BaseVo<V>> implements DataService<V> {
+public class BaseDataServiceJpa<T extends BaseEntity, V extends BaseVo<V>> implements DataService<V> {
 
     JpaRepository<T, String> repository;
 
