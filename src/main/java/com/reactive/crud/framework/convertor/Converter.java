@@ -7,7 +7,7 @@ import lombok.NonNull;
 /**
  * @author <a href = "mailto: iarpitsrivastava06@gmail.com"> Arpit Srivastava</a>
  */
-public interface Converter<T extends BaseEntity<T>, V extends BaseVo<V>> {
+public interface Converter<T extends BaseEntity, V extends BaseVo<V>> {
 
     @NonNull
     T convertVoToEntity(V vo);

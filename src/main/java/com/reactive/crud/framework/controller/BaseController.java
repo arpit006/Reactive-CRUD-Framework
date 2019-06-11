@@ -23,7 +23,7 @@ public abstract class BaseController<V extends BaseVo<V>> {
     }
 
     @PostMapping(value = "", consumes = "application/json", produces = "application/json")
-    public Mono<V> create(V vo) {
+    public Mono<V> create(@RequestBody V vo) {
         return dataService.create(vo);
     }
 

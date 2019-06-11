@@ -24,7 +24,7 @@ import java.util.List;
 @Data
 @NoArgsConstructor
 @EqualsAndHashCode(callSuper = false)
-public class PersonEntity extends BaseEntity<PersonEntity> {
+public class PersonEntity extends BaseEntity {
 
     @Column(name = "FIRST_NAME")
     private String firstName;

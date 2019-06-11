@@ -8,7 +8,7 @@ import org.dozer.Mapper;
 /**
  * @author <a href = "mailto: iarpitsrivastava06@gmail.com"> Arpit Srivastava</a>
  */
-public abstract class AbstractConverter<T extends BaseEntity<T>, V extends BaseVo<V>> implements Converter<T, V> {
+public abstract class AbstractConverter<T extends BaseEntity, V extends BaseVo<V>> implements Converter<T, V> {
 
     private Mapper mapper;
 
